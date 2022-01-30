@@ -7,8 +7,10 @@ namespace mystery
 {
     public class Know
     {
-        // in this simplified demo, a Prolog database is represented as a simple dictionary
-        // of string queries and List<string> answers.
+        // In this simplified demo, a Prolog database is represented as a simple dictionary
+        // of string queries and List<string> answers. In the real project, the variable "prolog"
+        // is actually a handle to prolog interpreter (https://github.com/jsakamoto/CSharpProlog)
+        // and I have no idea where it should go, but this "public static" definition seems to work.
         public static Dictionary<string, List<string>> prolog = new Dictionary<string, List<string>>();
     }
 
